@@ -1,13 +1,13 @@
 const { assert } = require("chai");
 const helpers = require("../runtime/helpers");
 
-/* eslint-disable no-undef */
+ /*eslint-disable no-undef */
 module.exports = {
 
     url: 'http://www.jootza.com/',
 
     elements: {
-        LoginButton: '//*[@id="bs-example-navbar-collapse-1"]/ul/li[2]/a',
+        Loginutton: '//*[@id="bs-example-navbar-collapse-1"]/ul/li[2]/a',
         LoginHeader: '/html/body/mdb-root/main/div/app-login/header/section/div/div/div/div/div/div/div[1]/h2/strong',
         username: by.name('username'),
         password: by.name('password'),
