@@ -24,7 +24,6 @@ module.exports = function () {
         return page.jootza.clickElement('OpenAccount');
     });
 
-
     this.Then('I should see CustomerRegistrationHeader', function () {
         return page.jootza.elementExists('CustomerRegistration');
     });
@@ -45,7 +44,8 @@ module.exports = function () {
     this.When(/^I enter password "([^"]*)"$/, function (objKey1) {
         return page.jootza.inputPassword(objKey1);
     });
-    this.Then(/^I should see "([^"]*)"$/, function (objectKey) {
+   
+    this.Then(/^I should see there "([^"]*)"$/, function (objectKey) {
         return page.jootza.elementExists(objectKey);
     });
 
