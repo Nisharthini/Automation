@@ -22,10 +22,10 @@ module.exports = function () {
         return;
     });*/
 
-    this.Then(/^I should see "([^"]*)"$/, function (objectKey) {
+    /*this.Then(/^I should see "([^"]*)"$/, function (objectKey) {
         console.log('The objectKey in commonsteps is: ' + objectKey)
         return page.common.elementExists(objectKey);
     
-    });
+    });*/
 
 }

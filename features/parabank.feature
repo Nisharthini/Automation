@@ -4,12 +4,12 @@ Feature: As a parabank customer, I want to be able to navigate to parabank page 
   Scenario Outline:Customer is displayed with parabank landing page
     Given I am on the "parabank" website
     When I enter "<Username>" with "<Password>"
-    Then I click "LoginButton"
+    And I click on "LoginButton"
+    Then I should see "Welcomemessage"
     Examples:
              | Username | Password | 
-             | nisha123 | nisha@1234 |
-       
-
+             | Nisharthini | nisha@1234 |
+    
   @parabank @parabankregister
   Scenario:Customer is displayed with parabank landing page
     Given I am on the "parabank" website
@@ -23,10 +23,12 @@ Feature: As a parabank customer, I want to be able to navigate to parabank page 
      | State | California | 
      | ZipCode | 94530 |
      | Phone | 1234567890 | 
-     | username | nisha |
-     | password | nisha@1234 |
+     | SSN | 1234 5678 9012 |
+     | Regusername | nisha |
+     | Regpassword | nisha@1234 |
      | Confirm | nisha@1234 |
-    Then I click "RegisterButton"
+    And I click on "RegisterButton"
+    Then I should see "Welcomemsg"
 
   @parabank @parabankforgetinfo
   Scenario:Customer is displayed with parabank landing page
@@ -40,4 +42,7 @@ Feature: As a parabank customer, I want to be able to navigate to parabank page 
      | RegCity | San Francisco |
      | RegState | California | 
      | RegZipCode | 94530 |
-    Then I click "findmyinfo"
+     | RegSSN | 1234 5678 9012 |
+    And I click on the "findmyinfo"
+    Then I should see "CustomerInfo"
+    

@@ -1,4 +1,4 @@
-const helpers = require("../runtime/helpers");
+/*const helpers = require("../runtime/helpers");
 
 module.exports = function () {
 
@@ -11,10 +11,6 @@ module.exports = function () {
         page.parabank.inputElement('Username',Username);
         page.parabank.inputElement('Password',Password);
        });
-
-     this.Then(/^I click "([^"]*)"$/, function(objectKey) { 
-        return page.parabank.clickElement(objectKey)
-    });
 
     this.When(/^I click on "([^"]*)"$/, function(objectKey) { // VehiclesButton, InventoryLink
         return page.parabank.clickElement(objectKey)
@@ -34,10 +30,10 @@ module.exports = function () {
         };
         return;
     });
+
     this.Then(/^I should see "([^"]*)"$/, function (objectKey) {
         console.log('The objectKey in commonsteps is: ' + objectKey)
         return page.parabank.elementExists(objectKey);
-    
-    });
-
+     });
 }
+*/
