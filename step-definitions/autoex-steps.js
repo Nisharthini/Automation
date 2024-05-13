@@ -33,11 +33,6 @@ module.exports = function () {
         };
         return;
     });
-    
-    this.When(/^I should see "([^"]*)"$/, function (objectKey) {
-        console.log('The objectKey in commonsteps is: ' + objectKey)
-        return page.autoex.elementExists(objectKey);
-     });
 
     this.Then(/^I should see "([^"]*)"$/, function (objectKey) {
         console.log('The objectKey in commonsteps is: ' + objectKey)

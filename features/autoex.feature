@@ -1,6 +1,6 @@
 Feature: As a student, I want to be able to navigate to automation exercise page so that I can practice
 
-  @autoex @autoreg
+  @Autoex @Autoreg
   Scenario Outline:Customer is displayed with automation exercise landing page
     Given I am on the "autoex" website
     When I see "homepage" website
