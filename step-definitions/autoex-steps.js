@@ -13,16 +13,22 @@ module.exports = function () {
         return page.autoex.elementExists(objectKey);
      });
     
-    this.When(/^I click on "([^"]*)"$/, function(objectKey) { // VehiclesButton, InventoryLink
+    this.Then(/^I click on "([^"]*)"$/, function(objectKey) { // VehiclesButton, InventoryLink
         return page.autoex.clickElement(objectKey)
     });
 
-    this.When(/^I see "([^"]*)"$/, function (objectKey) {
+    this.Then(/^I should see "([^"]*)"$/, function (objectKey) {
         console.log('The objectKey in commonsteps is: ' + objectKey)
         return page.autoex.elementExists(objectKey);
      });
+
+    this.Then(/^I see "([^"]*)"$/, function (objectKey) {
+        console.log('The objectKey in commonsteps is: ' + objectKey)
+        return page.autoex.elementExists(objectKey);
+     });
+     
     
-    this.When(/^I enter "([^"]*)" with "([^"]*)"$/,function(Username,Password) { // VehiclesButton, InventoryLink 
+    this.Then(/^I enter "([^"]*)" with "([^"]*)"$/,function(Name,emailid) { // VehiclesButton, InventoryLink 
         page.autoex.inputElement('Name',Name);
         page.autoex.inputElement('emailid',emailid);
        });
@@ -32,11 +38,6 @@ module.exports = function () {
            page.autoex.inputElement(fields[i][0],fields[i][1]);
         };
         return;
-    });
-
-    this.Then(/^I should see "([^"]*)"$/, function (objectKey) {
-        console.log('The objectKey in commonsteps is: ' + objectKey)
-        return page.autoex.elementExists(objectKey);
-     });
+        });
     
 }

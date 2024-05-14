@@ -21,14 +21,13 @@ module.exports = {
         City:'//*[@id="city"]',
         ZipCode:'//*[@id="zipcode"]',
         Mobilephone:'//*[@id="mobile_number"]',
-        CreateAccount:'//*[@id="form"]/div/div/div/div[1]/form/button',
+        CreateAccount:'//*[@id="form"]/div/div/div/div[1]/form/input[2]',
         accountcreatedmsg:'//*[@id="form"]/div/div/div/h2/b',
         Continuebtn:'//*[@id="form"]/div/div/div/div/a',
         loggedinas:'//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a',
         deletebtn:'//*[@id="header"]/div/div/div/div[2]/div/ul/li[5]/a',
         Accdeleted:'//*[@id="form"]/div/div/div/h2/b',
         Continue:'//*[@id="form"]/div/div/div/div/a',
-       
     },
 
     clickElement: async function (objectKey) { // LoginButton
